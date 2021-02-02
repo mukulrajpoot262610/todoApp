@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    outline: none;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+::placeholder{
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+.screen{
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+.input{
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.btn{
+    font-size: 30px;
+    background: none;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.boxes{
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.notCompleted{
+    width: 30vw;
+    background-color: white;
+    box-shadow: 0 0 10px 1px #000000;
+    border-radius: 5px;
+}
+
+.completed{
+    width: 30vw;
+    background-color: white;
+    box-shadow: 0 0 10px 1px #000000;
+    border-radius: 5px;
+}
+
+.process{
+    width: 30vw;
+    background-color: white;
+    box-shadow: 0 0 10px 1px #000000;
+    border-radius: 5px;
+}
+
+.notCompleted:hover{
+    box-shadow: 0 0 10px 1px beige;
+}
+
+.completed:hover{
+    box-shadow: 0 0 10px 1px beige;
+}
+
+.process:hover{
+    box-shadow: 0 0 10px 1px beige;
+}
+
+h1{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0px;
+    color: blueviolet;
+    border-bottom: 3px solid blueviolet;
+    font-weight: bold;
+}
+
+.task{
+    background-color: beige;
+    border-radius: 10px;
+    margin: 10px 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.task button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: crimson;
+    padding: 0px 5px;
+}
+
+.task button:hover{
+    color: blueviolet;
+}
+
+.task button i{
+    pointer-events: none;
+}
+
+.fall{
+    transition: all 0.5s ease;
+    transform: rotate(-10deg) translateY(50px);
+    opacity: 0;
+}
+
+footer{
+    background-color: whitesmoke;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+footer h1{
+    border: none;
+}
